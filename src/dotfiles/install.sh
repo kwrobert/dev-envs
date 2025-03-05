@@ -31,6 +31,6 @@ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 if [ -z "$GITHUB_TOKEN" ]; then
     /usr/local/bin/yadm clone --bootstrap git@github.com:kwrobert/dotfiles.git
 else
-    /usr/local/bin/yadm clone --bootstrap git:${GITHUB_TOKEN}@github.com:kwrobert/dotfiles.git
+    /usr/local/bin/yadm clone --bootstrap https://git:${GITHUB_TOKEN}@github.com:kwrobert/dotfiles.git
 fi
 
