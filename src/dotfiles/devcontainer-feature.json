@@ -1,7 +1,7 @@
 {
     "name": "My Dotfiles",
     "id": "dotfiles",
-    "version": "1.0.6",
+    "version": "1.0.7",
     "description": "A feature to install all my dotfiles using YADM dotfile manager",
     "options": {
       "bootstrap": {

@@ -28,7 +28,7 @@ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 # # Clone my dotfiles repo using YADM and bootstrap my environment using
 # bootstrap script
-if [[ -z "$GITHUB_TOKEN" ]]; then
+if [ -z "$GITHUB_TOKEN" ]; then
     /usr/local/bin/yadm clone --bootstrap git@github.com:kwrobert/dotfiles.git
 else
     /usr/local/bin/yadm clone --bootstrap git:${GITHUB_TOKEN}@github.com:kwrobert/dotfiles.git
