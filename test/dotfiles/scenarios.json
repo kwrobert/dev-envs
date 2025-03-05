@@ -1,0 +1,5 @@
+{
+    "basic_dotfiles_test": {
+        "image": "mcr.microsoft.com/devcontainers/base:focal"
+    }
+}
