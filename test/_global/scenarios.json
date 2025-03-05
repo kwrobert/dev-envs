@@ -1,12 +1,17 @@
 {
-    "color_and_hello": {
+    "dotfiles_with_bootstrap": {
         "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
         "features": {
-            "color": {
-                "favorite": "purple"
-            },
-            "hello": {
-                "greeting": "Greetings"
+            "dotfiles": {
+                "bootstrap": true
+            }
+        }
+    },
+    "dotfiles_without_bootstrap": {
+        "image": "mcr.microsoft.com/devcontainers/base:ubuntu",
+        "features": {
+            "dotfiles": {
+                "bootstrap": false
             }
         }
     }

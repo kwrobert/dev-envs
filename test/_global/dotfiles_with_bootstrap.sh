@@ -16,6 +16,8 @@ set -e
 # Optional: Import test library bundled with the devcontainer CLI
 source dev-container-features-test-lib
 
+nvim --version
+
 #echo -e "The result of the 'color' command will be:\n"
 #color
 #echo -e "The result of the 'hello' command will be:\n"
