@@ -1,0 +1,16 @@
+{
+    "name": "My Dotfiles",
+    "id": "dotfiles",
+    "version": "1.0.3",
+    "description": "A feature to install all my dotfiles using YADM dotfile manager",
+    "options": {
+       "bootstrap": {
+           "type": "boolean",
+           "default": true,
+           "description": "Run the bootstrap script checked into yadm"
+       }
+    }
+    // "installsAfter": [
+    //     "ghcr.io/devcontainers/features/common-utils"
+    // ]
+}
