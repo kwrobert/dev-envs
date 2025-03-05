@@ -3,6 +3,7 @@ set -e
 
 echo "Activating feature 'dotfiles'"
 echo "BOOTSTRAP: ${BOOTSTRAP}"
+echo "GITHUB_TOKEN: ${GITHUB_TOKEN}"
 
 
 # The 'install.sh' entrypoint script is always executed as the root user.
@@ -29,4 +30,9 @@ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 # # Clone my dotfiles repo using YADM and bootstrap my environment using
 # bootstrap script
-cd $HOME && /usr/local/bin/yadm clone --bootstrap git@github.com:kwrobert/dotfiles.git
+if [[ -z "$GITHUB_TOKEN" ]]; then
+    /usr/local/bin/yadm clone --bootstrap git@github.com:kwrobert/dotfiles.git
+else
+    /usr/local/bin/yadm clone --bootstrap git:${GITHUB_TOKEN}@github.com:kwrobert/dotfiles.git
+fi
+

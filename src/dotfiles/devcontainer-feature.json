@@ -1,14 +1,19 @@
 {
     "name": "My Dotfiles",
     "id": "dotfiles",
-    "version": "1.0.4",
+    "version": "1.0.5",
     "description": "A feature to install all my dotfiles using YADM dotfile manager",
     "options": {
-       "bootstrap": {
-           "type": "boolean",
-           "default": true,
-           "description": "Run the bootstrap script checked into yadm"
-       }
+      "bootstrap": {
+        "type": "boolean",
+        "default": true,
+        "description": "Run the bootstrap script checked into yadm"
+      },
+      "github_token": {
+        "type": "string",
+        "default": "",
+        "description": "Github token used to clone private dotfiles repo"
+      }
     }
     // "installsAfter": [
     //     "ghcr.io/devcontainers/features/common-utils"
