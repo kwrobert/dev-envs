@@ -23,7 +23,7 @@ curl -fLo /usr/local/bin/yadm https://github.com/yadm-dev/yadm/raw/master/yadm
 chmod a+x /usr/local/bin/yadm
 
 # Add github host keys to known hosts
-mkdir ~/.ssh
+mkdir -p ~/.ssh
 ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 
 # # Clone my dotfiles repo using YADM and bootstrap my environment using
